@@ -20,7 +20,8 @@ return (
             </div>
             <div className="shadow-md shadow-white rounded-3xl p-4">
                 <h1 className='text-teal-500 font-bold mb-1'>BookMyShow:</h1>
-                <p className='text-justify leading-6'>The purpose of the project titled “Cryptocurrency Dashboard” is to exclusiv provide a we application that is user-friendly & reliable.This will give the insight to tr    various cryptocurrencies o  one’s interest. The project mainly focuses on front-end technologies  build this responsive web application that will work seamlessly across all platforms. The Dashboarhas four modules: Cryptocurrency Graph, Marke    Cap table, Exchange crypto-currency, and Portfolio.</p>
+                <p className='text-justify leading-6'>The purpose of the project titled “BookMyShow” is to provide a web application that is user-friendly & reliable. The project mainly focuses on the back-end and front-end technologies to build web applications. It has four modules: Movie Name, Time Slot, Seat Slot, and Last Booking Details.
+</p>
             </div>
         </div> 
     </section>
