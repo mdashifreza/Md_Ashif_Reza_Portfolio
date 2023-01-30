@@ -20,7 +20,7 @@ return (
             </div>
             <div className="shadow-md shadow-white rounded-3xl p-4">
                 <h1 className='text-teal-500 font-bold mb-1'>BookMyShow:</h1>
-                <p className='text-justify leading-6'>The purpose of the project titled “BookMyShow” is to provide a web application that is user-friendly & reliable. The project mainly focuses on the back-end and front-end technologies to build web applications. It has four modules: Movie Name, Time Slot, Seat Slot, and Last Booking Details.
+                <p className='text-justify leading-6'>The purpose of the project titled “BookMyShow” is to provide a web application that is user-friendly & reliable. The project mainly focuses on the back-end and front-end technologies to build web applications. It has four modules: Movie Name, Time Slot, Seat Slot, and Last Booking Details .
 </p>
             </div>
         </div> 
