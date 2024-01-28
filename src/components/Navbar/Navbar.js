@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import Md_Ashif_Reza_Full_Stack_Dev from "../../assets/portfolio/Md_Ashif_Reza_Full_Stack_Dev.pdf";
+import { updateDarkMode } from '../../state/action-creators';
 function Navbar() {
+    const dispatch = useDispatch();
+    const [dark, setDark] = useState(false);
+    const handleClick = ()=>{
+        setDark(!dark)
+        dispatch(updateDarkMode(dark))
+    }
     const darkMode = useSelector((state) => state.darkMode);
-
     const navbarData = [
         {   
             id:1,
@@ -28,12 +34,6 @@ function Navbar() {
         },
         {   
             id:5,
-            path:"logo",
-            menu: <BsFillMoonStarsFill/>,
-            downlodable : "Md_Ashif_Reza_Full_Stack_Dev",
-        },
-        {   
-            id:6,
             path:"#contact",
             menu: "Contact"
         },
@@ -45,12 +45,13 @@ function Navbar() {
                     <div className="text-2xl flex font-serif pl-2 pt-1 bg-teal-400 w-[180px] shadow-md hover:scale-110 duration-500 rounded">
                         <h1 className="font-customfont_1"><a href="/">Md Ashif Reza</a></h1>
                     </div>
-                    <div className="container flex items-center justify-end p-6 mx-auto capitalize font-serif">
+                    <div className="container flex items-center justify-end p-6 mx-auto capitalize font-serif text-xl">
                         {
                             navbarData?.map((item)=>{return(<a href={item.path} key={item.id}
                                 className="border-b-2 border-transparent hover:border-teal-600 mx-1.5 sm:mx-4 "
                             >{item.menu}</a>)})
                         }
+                        <button className="ml-3 mr-6" onClick={handleClick}><BsFillMoonStarsFill size={25}/></button>
                         <a href={Md_Ashif_Reza_Full_Stack_Dev} target="_blank" rel="noopener noreferrer" className="bg-teal-400 p-1 pr-3 pl-3 rounded-md text-xl">Resume</a>
                     </div>
                 </div>
