@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        burtons:"burtons",
+        burtons: "burtons",
+        customfont_1 : ['Great Vibes']
       },
     },
   },
