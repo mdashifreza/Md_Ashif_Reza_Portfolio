@@ -11,8 +11,7 @@ function Intro() {
                     <h1 className='text-3xl font-extrabold'>Md Ashif Reza</h1>
                     <h1 className='text-xl font-bold text-gray-350'>I'm a Full Stack Developer</h1>
                     <p className='justify-text w-[500px] text-gray-300'>
-                        I am an experienced Full Stack Developer specializing proficient
-                        in MERN stack technology in both backend and frontend development
+                    I specialize in crafting high-performance web and mobile applications using Next.js, React Native, Node.js, Express.js, and PostgreSQL. With a strong foundation in MERN stack and cloud technologies (AWS, Digital Ocean, Docker), I love building scalable, efficient, and user-friendly solutions.
                     </p>
                     <div className="flex justify-center m-3 gap-11 rounded-md text-5xl cursor-pointer">
                         <a href="https://www.linkedin.com/in/md-ashif-reza/"><AiFillLinkedin /></a>

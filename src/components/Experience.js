@@ -4,6 +4,17 @@ const Experience = () => {
     const experiences = [
         {
             title: 'Software Developer',
+            company: 'Sawalsha Leasing & Finance Pvt. Ltd.',
+            duration: '05/2024 - present',
+            skills: 'NextJS, React Native, Postgres, Tailwind CSS, NodeJS, ExpressJS, AWS, Digital Ocean, Docker',
+            details: [
+                'Enhanced infrastructure efficiency by optimizing backend processes using Express.js and PostgreSQL, achieving an 8.33% reduction in operational costs while ensuring performance and scalability.',
+                'Developed a role-based access control module with Next.js and Express.js, enforcing secure and efficient access management within the CRM.',
+                'Implemented an audit log system in PostgreSQL to track and record all modifications made by users, improving transparency and accountability.'
+            ],
+        },
+        {
+            title: 'Software Developer',
             company: 'CityTech Innovations Pvt. Ltd. (Dakoo)',
             duration: '06/2023 - 12/2023',
             skills: 'React Native, AWS, Async storage, OTP Login, DynamoDB, AWS API Gateway, S3',

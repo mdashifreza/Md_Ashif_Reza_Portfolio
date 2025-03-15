@@ -12,14 +12,16 @@ import react from "../../assets/react.png";
 import docker from "../../assets/docker.png";
 import websocket from "../../assets/websocket.png";
 import reactnative from "../../assets/reactnative.png";
+import nextjs from "../../assets/nextjs-icon.png";
+import PostgreSql from "../../assets/PostgreSql.png";
 
 function About() {
     const darkMode = useSelector((state) => state.darkMode);
     const techs = [
         {
             id: 1,
-            src: docker,
-            title: "Docker",
+            src: PostgreSql,
+            title: "PostgreSQL",
             style: "shadow-blue-400",
 
         },
@@ -31,24 +33,24 @@ function About() {
         },
         {
             id: 3,
-            src: react,
-            title: "React",
+            src: nextjs,
+            title: "NextJS",
             style: "shadow-blue-400",
         },
-        {
-            id: 4,
-            src: html,
-            title: "HTML",
-            style: "shadow-orange-400",
+        // {
+        //     id: 4,
+        //     src: html,
+        //     title: "HTML",
+        //     style: "shadow-orange-400",
 
-        },
-        {
-            id: 5,
-            src: css,
-            title: "CSS",
-            style: "shadow-blue-400",
+        // },
+        // {
+        //     id: 5,
+        //     src: css,
+        //     title: "CSS",
+        //     style: "shadow-blue-400",
 
-        },
+        // },
         {
             id: 6,
             src: tailwind,
@@ -108,7 +110,7 @@ function About() {
                         {techs?.map(({ id, src, title, style }) => (
                             <div
                                 key={id}
-                                className={`shadow-md hover:scale-110 duration-500 py-2 rounded-xl p-0.5 ${style}`}
+                                className={`shadow-md hover:scale-110 duration-500 py-2 rounded-xl p-0.5 ${style} flex flex-col justify-between`}
                             >
                                 <img src={src} alt="icon" className="w-20 mx-auto py-0.1" />
                                 <p className="mt-4 text-center justify-center ">{title}</p>
